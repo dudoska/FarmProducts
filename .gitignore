@@ -1,2 +1,4 @@
-# Ignore .idea folder
+# Ignore .idea folder & files
 .idea/*
+.idea/modules.xml
+.idea/vcs.xml
