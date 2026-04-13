@@ -414,6 +414,7 @@ header {
 }
 
 footer {
+    display: flex;
     height: 327px;
     background-color: var(--text-color);
 }
