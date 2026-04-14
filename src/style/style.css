@@ -75,7 +75,7 @@ footer {
 }
 
 .footer-lable {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 75px;
     font-family: "ProstoOne", sans-serif;
     padding: 24px;
@@ -139,9 +139,10 @@ footer {
 .footer-info {
     display: grid;
     color: var(--text-color-alt);
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
+    column-gap: 80px;
     margin-top: 50px;
-    margin-left: 192px;
+    margin-left: 180px;
 }
 
 .footer-h1 {
@@ -151,14 +152,34 @@ footer {
     margin-bottom: 40px;
 }
 
-.footer-h2 {
+.footer-link {
+    display: block;
     font-family: Inter-ExtraBold, sans-serif;
     font-size: 16px;
     margin-bottom: 28px;
+    color: var(--text-color-alt);
+    text-decoration: none;
+}
+
+.footer-link:visited {
+    color: var(--text-color-alt);
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+    color: var(--text-footer-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .footer-address {
     margin-right: 50px;
+}
+
+.footer-time a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
 }
 
 @font-face {
