@@ -8,6 +8,7 @@
     /* Дополнительные цвета */
     --text-color-alt: #FFF9F0;
     --text-color-accent: #FFB306;
+    --text-footer-accent: #FFB000;
 }
 
 * {
@@ -65,6 +66,99 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+footer {
+    display: flex;
+    height: 327px;
+    background-color: var(--text-color);
+}
+
+.footer-lable {
+    margin-top: 50px;
+    margin-left: 75px;
+    font-family: "ProstoOne", sans-serif;
+    padding: 24px;
+}
+
+.footer-la, .footer-ln {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-la {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    background-image: url('../image/logo2.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-ln {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-footer-accent);
+    letter-spacing: 1px;
+}
+
+.footer-ld {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #8c9386;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer-ls {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-ls div {
+    width: 60px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.ls1 {
+    background-image: url("../image/icons/telegram.svg");
+}
+
+.ls2 {
+    background-image: url("../image/icons/vk.svg");
+}
+
+.ls3 {
+    background-image: url("../image/icons/gmail.svg");
+}
+
+.footer-info {
+    display: grid;
+    color: var(--text-color-alt);
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    margin-left: 192px;
+}
+
+.footer-h1 {
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.footer-h2 {
+    font-family: Inter-ExtraBold, sans-serif;
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+
+.footer-address {
+    margin-right: 50px;
 }
 
 @font-face {
