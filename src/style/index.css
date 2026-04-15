@@ -359,3 +359,338 @@
 .feedback-point.active {
     background-color: #000000;
 }
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+    .header-logo {
+        margin-left: 0;
+    }
+    .header-title {
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    .header-title a {
+        margin-right: 15px;
+    }
+    .header-login {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .banner {
+        height: 500px;
+    }
+    .banner-circle {
+        width: 90%;
+        height: auto;
+        padding: 40px 20px;
+        border-radius: 50px;
+    }
+    .banner-h1 {
+        font-size: 32px;
+    }
+    .banner-h2 {
+        font-size: 16px;
+    }
+
+    .advs {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        height: auto;
+        row-gap: 40px;
+        margin-top: 60px;
+    }
+    .adv-h2 {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .ssnl-h1, .ctgs-h1, .farms-h1 {
+        padding-left: 20px;
+        padding-bottom: 30px;
+        font-size: 28px;
+    }
+
+    .ssnl {
+        height: auto;
+        margin-top: 60px;
+        padding-bottom: 40px;
+    }
+    .ssnl-cards {
+        width: 100%;
+        padding: 0 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .ssnl-card {
+        width: 100%;
+        height: 200px;
+        border-radius: 30px;
+    }
+
+    .ctgs {
+        height: auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .ctgs-cards {
+        width: 100%;
+        padding: 0 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .ctgs-card {
+        width: 100%;
+        height: 200px;
+        border-radius: 30px;
+    }
+    .c3 {
+        width: 100%;
+        height: 200px;
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+    .farms {
+        height: auto;
+        margin-bottom: 60px;
+    }
+    .farms-cards {
+        width: 100%;
+        padding: 0 20px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .farms-card {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .farms-img {
+        width: calc(100% - 44px);
+    }
+    .farms-description {
+        width: 90%;
+    }
+
+    .feedback {
+        gap: 20px;
+        padding: 0 20px;
+        margin-bottom: 60px;
+    }
+    .feedback-content {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "avatar"
+            "name"
+            "date"
+            "text"
+            "points";
+        justify-items: center;
+        text-align: center;
+    }
+    .feedback-text {
+        font-size: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+    .footer-lable {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .footer-info {
+        margin-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .footer-time a {
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    header {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px 10px;
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        margin-right: auto;
+    }
+
+    .header-login {
+        margin-left: auto;
+    }
+
+    .header-title {
+        width: 100%;
+        justify-content: space-between;
+        margin: 15px 0 0 0;
+        font-size: 10px;
+    }
+
+    .banner {
+        height: 380px;
+    }
+
+    .banner-circle {
+        width: 92%;
+        padding: 30px 15px;
+        border-radius: 30px;
+    }
+
+    .banner-h1 {
+        font-size: 22px;
+    }
+
+    .banner-h2 {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .advs {
+        margin-top: 40px;
+        padding: 15px;
+        row-gap: 30px;
+    }
+
+    .adv-h1 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .adv-h2 {
+        font-size: 14px;
+    }
+
+    .ssnl-h1, .ctgs-h1, .farms-h1 {
+        font-size: 22px;
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+
+    .ssnl {
+        margin-top: 40px;
+    }
+    .ctgs {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .ssnl-cards, .ctgs-cards {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+        gap: 15px;
+    }
+    .ssnl-card, .ctgs-card {
+        height: 180px;
+        border-radius: 20px;
+    }
+    .c3 {
+        grid-column: span 1;
+        height: 180px;
+    }
+
+    .farms-cards {
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .farms-card {
+        border-width: 3px;
+        padding-bottom: 15px;
+    }
+
+    .farms-img {
+        width: calc(100% - 20px);
+        margin: 10px;
+        height: 180px;
+    }
+
+    .farms-h2 {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+    .farms-description {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .feedback {
+        padding: 0 15px;
+        margin-bottom: 40px;
+    }
+
+    .feedback-left, .feedback-right {
+        display: none;
+    }
+
+    .feedback-avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .feedback-name {
+        font-size: 18px;
+    }
+
+    .feedback-date {
+        font-size: 12px;
+    }
+
+    .feedback-text {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .feedback-points {
+        margin-top: 20px;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+
+    .footer-lable {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .footer-ls {
+        justify-content: center;
+    }
+
+    .footer-info {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-cont a, .footer-time a {
+        justify-content: center;
+    }
+
+    .footer-h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
