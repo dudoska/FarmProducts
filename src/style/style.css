@@ -171,6 +171,14 @@ footer {
     text-underline-offset: 3px;
 }
 
+.footer-time .footer-link:hover,
+.footer-time .footer-link:focus-visible {
+    color: var(--text-color-alt);
+    text-decoration: none;
+    text-underline-offset: 0;
+    cursor: default;
+}
+
 .footer-address {
     margin-right: 50px;
 }
