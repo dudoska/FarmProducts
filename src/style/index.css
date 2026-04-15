@@ -299,6 +299,10 @@
     align-items: start;
 }
 
+.feedback-content * {
+    transition: all 0.3s ease-in-out;
+}
+
 .feedback-avatar {
     grid-area: avatar;
     background-repeat: no-repeat;
