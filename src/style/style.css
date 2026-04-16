@@ -219,58 +219,192 @@ footer {
     width: 30px;
 }
 
-/* --- Стили для размытого фона (оверлея) --- */
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.4); /* Полупрозрачный темный фон */
-
-    /* Магия блюра */
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px); /* Для поддержки Safari */
-
+    -webkit-backdrop-filter: blur(8px);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-
-    /* Скрываем по умолчанию, но оставляем возможность анимации */
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease;
 }
 
-/* --- Стили самого окошка --- */
 .modal-window {
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    max-width: 400px;
-    width: 90%;
-    position: relative;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-
-    /* Анимация выплывания снизу */
-    transform: translateY(50px);
-    transition: all 0.4s ease;
+    background-color: var(--text-color-alt);
+    max-width: 480px;
+    padding: 40px 50px;
+    text-align: center;
+    border-radius: 20px;
 }
 
-/*!* --- МАГИЯ ОТКРЫТИЯ --- *!*/
-/*!* Когда хэш в URL совпадает с id (#myModal) *!*/
-/*.modal-overlay:target {*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*}*/
+.modal-h1 {
+    font-family: 'ProstoOne', sans-serif;
+    font-size: 26px;
+    color: var(--text-color);
+    line-height: 1.3;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
 
-/*!* Выплывание самого окна при открытии *!*/
-/*.modal-overlay:target .modal-window {*/
-/*    transform: translateY(0);*/
-/*}*/
+.modal-h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #8c9386;
+    margin-bottom: 25px;
+}
 
-/* --- Кнопка закрытия (крестик) --- */
+.modal-h3 a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.modal-h3 a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.modal-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.modal-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    background-color: var(--text-color-alt);
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.modal-social:hover {
+    border-color: var(--accent);
+    background-color: rgba(244, 244, 244, 0.5);
+}
+
+.modal-icon {
+    position: absolute;
+    left: 20px;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-social:nth-child(1) .modal-icon {
+    background-image: url('../image/icons/google.svg');
+}
+
+.modal-social:nth-child(2) .modal-icon {
+    background-image: url('../image/icons/vk_color.svg');
+}
+
+.modal-title {
+    font-family: 'Inter-ExtraBold', sans-serif;
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+.modal-window > .modal-h3:nth-of-type(2) {
+    margin-bottom: 20px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.modal-input {
+    width: 100%;
+    height: 48px;
+    background-color: var(--text-color-alt);
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    padding: 0 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--text-color);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-input::placeholder {
+    color: #A0A0A0;
+}
+
+.modal-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(224, 168, 43, 0.1);
+}
+
+.modal-submit {
+    width: 100%;
+    height: 48px;
+    background-color: var(--accent);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Inter-ExtraBold', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 5px;
+}
+
+.modal-submit:hover {
+    background-color: #c99625;
+}
+
+.modal-submit:active {
+    transform: scale(0.98);
+}
+
+.modal-window > .modal-h3:nth-last-child(2) {
+    margin-bottom: 15px;
+}
+
+.modal-window > .modal-h3:nth-last-child(2) a {
+    font-family: 'Inter-ExtraBold', sans-serif;
+    font-size: 14px;
+}
+
+.modal-window > .modal-h3:last-child {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #A0A0A0;
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+
+.modal-window > .modal-h3:last-child a {
+    color: #8c9386;
+    text-decoration: underline;
+    font-family: 'Inter', sans-serif;
+}
+
+.modal-window > .modal-h3:last-child a:hover {
+    color: var(--text-color);
+}
+
 .close-btn {
     position: absolute;
     top: 15px;

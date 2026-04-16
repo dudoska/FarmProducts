@@ -158,8 +158,54 @@
     <div id="login" class="modal-overlay">
         <div class="modal-window">
             <a href="#" class="close-btn">&times;</a>
-            <h2>Привет!</h2>
-            <p>Это окно плавно выплыло, а фон позади стал размытым.</p>
+            <div class="modal-h1">Добро пожаловать в Фермерские продукты</div>
+            <div class="modal-h3">Нет аккаунта? <a href="#" id="toRegisterBtn">Бесплатная регистрация</a></div>
+            <div class="modal-socials">
+                <div class="modal-social">
+                    <div class="modal-icon m1"></div>
+                    <div class="modal-title">Войти с Google</div>
+                </div>
+                <div class="modal-social">
+                    <div class="modal-icon m1"></div>
+                    <div class="modal-title">Войти с VK</div>
+                </div>
+            </div>
+            <div class="modal-h3">или войдите с помощью электронной почты:</div>
+            <div class="modal-form">
+                <input class="modal-input" id="loginEmail" type="email" placeholder="Почта">
+                <input class="modal-input" id="loginPass" type="password" placeholder="Введите пароль">
+                <button class="modal-submit" id="loginSubmit">Войти</button>
+            </div>
+            <div class="modal-h3"><a href="#">Сбросить пароль</a></div>
+            <div class="modal-h3">Войдя в систему, вы соглашаетесь с <a href="#">"Условиями использования"</a> и <a href="#">"Политикой конфиденциальности"</a></div>
+        </div>
+    </div>
+    <div id="register" class="modal-overlay">
+        <div class="modal-window">
+            <a href="#" class="close-btn">&times;</a>
+            <div class="modal-h1">Бесплатная регистрация</div>
+            <div class="modal-h3">Уже есть аккаунт? <a href="#" id="toLoginBtn">Войти</a></div>
+
+            <div class="modal-socials">
+                <div class="modal-social">
+                    <div class="modal-icon m1" style="background-image: url('src/image/icons/google.svg');"></div>
+                    <div class="modal-title">Google регистрация</div>
+                </div>
+                <div class="modal-social">
+                    <div class="modal-icon m1" style="background-image: url('src/image/icons/vk_color.svg');"></div>
+                    <div class="modal-title">VK регистрация</div>
+                </div>
+            </div>
+
+            <div class="modal-h3">или Зарегистрироваться с помощью электронной почты:</div>
+
+            <div class="modal-form">
+                <input class="modal-input" id="regEmail" type="email" placeholder="Почта">
+                <input class="modal-input" id="regPass" type="password" placeholder="Введите пароль">
+                <button class="modal-submit" id="regSubmit">Создать</button>
+            </div>
+
+            <div class="modal-h3">Регистрируясь вы соглашаетесь с <br><a href="#">"Условиями использования"</a> и <a href="#">"Политикой конфиденциальности"</a></div>
         </div>
     </div>
 </body>
