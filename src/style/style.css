@@ -177,6 +177,10 @@ footer {
     text-underline-offset: 3px;
 }
 
+.footer-address .footer-link:focus-visible,
+.footer-address .footer-link:hover,
+.footer-cont .footer-link:hover,
+.footer-cont .footer-link:focus-visible,
 .footer-time .footer-link:hover,
 .footer-time .footer-link:focus-visible {
     color: var(--text-color-alt);

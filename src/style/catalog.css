@@ -34,6 +34,7 @@
     align-content: center;
     position: relative;
     z-index: 1;
+    margin-bottom: 90px;
 }
 
 .banner-h1 {
